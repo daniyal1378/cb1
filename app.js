@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const server = app.listen(4000);
+const server = app.listen(process.env.PORT || 8080);
 const socket = require('socket.io');
 const io = socket(server);
 
