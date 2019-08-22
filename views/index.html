@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <script src="/socket.io/socket.io.js"></script>
+        <script>
+            socket = io.connect();
+            socket.on('connect',function(){
+                console.log('connect');
+            });
+            socket.on('diconnect',function(){
+                console.log('disconnect');
+            })
+            socket.on('alertnew',function(){
+                alert('ok ok ok ');
+            })
+        </script>
+    </head>
+</html>
